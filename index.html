@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Module Answer Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Subjects</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">Answer</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Trsdn'tfall
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/math1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">Mathematics in the Modern World</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/electronics.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 214</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/pe.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">PE 4 - TEAM SPORTS</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/fluid.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">AC 3 Fluid Mechanics</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/electrical.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 213 - Electrical circuits 2 [4 Units] BEET - 2C/2C1</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/communication.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">GE PurComm- BEET 2C</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/micro.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 313 	Microprocessor System</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 312 *	Programmable Logic Controller.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/maintinnace.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 311 Electrical Machines.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/law.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">EET 314 	EE Laws, Lodes, Standards and Ethics</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle"> GE Eth 	Ethics</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/rizal.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/edutechional.png" alt="">
+            </div>
+
+            <div class="subtitle">GE Rizal 	Life and Works of Riza</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
