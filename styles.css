@@ -112,6 +112,7 @@ body {
   .profile-image-wrapper img {
     width: 100%;
     margin-left: 10px;
+    border-radius:50%;
     
     
   }
