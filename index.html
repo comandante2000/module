@@ -1,190 +1,261 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BEET 3C</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">BEET 3C</a>
 
-<head>
-  <meta charset='UTF-8'>
-  <title>Module Answer Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="left-side">
-        <div class="nav-link-wrapper active-nav-link">
-          <a href="index.html">Subjects</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="about.html">Answer</a>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Subjects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Skadoosh</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="right-side">
-        <div class="brand">
-          Comandante
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper">
-      <div class="portfolio-items-wrapper">
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/math1.jpg)"></div>
-
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">Mathematics in the Modern World</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/electronics.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 214</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/pe.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">PE 4 - TEAM SPORTS</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/fluid.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">AC 3 Fluid Mechanics</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/electrical.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 213 - Electrical circuits 2 [4 Units] BEET - 2C/2C1</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/communication.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">GE PurComm- BEET 3C</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/micro.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 313 	Microprocessor System</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 312 *	Programmable Logic Controller.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/maintinnace.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 311 Electrical Machines.</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/law.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">EET 314 	EE Laws, Lodes, Standards and Ethics</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle"> GE Eth 	Ethics</div>
-          </div>
-        </div>
-
-        <div class="portfolio-item-wrapper">
-          <div class="portfolio-img-background" style="background-image:url(images/rizal.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/edutechional.png" alt="">
-            </div>
-
-            <div class="subtitle">GE Rizal 	Life and Works of Riza</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    </nav>
+<!-- Showcase -->
+<section
+class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sl-start"
+>
+<div class="container">
+  <div class="d-sm-flex align-items-center justify-content-between">
+    <div>
+      <h1>For <span class="text-warning"> Educational Purposes </span></h1>
+      <p class="lead my-4">
+        Just me sharing stuff for my classmates<span class="text-warning"> reset every 168 hrs </span>
+      </p>
+      
   </div>
+</div>
+</section>
+ <!-- Question Accordion -->
+ <section id="questions" class="bg-success  p-5 p-lg-0 pt-lg-5 text-center ">
+    <div class="container">
+      <h2 class="color-white text-center mb-4">Subjects</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-one"
+            >
+              EET 311
+            </button>
+          </h2>
+          <div
+            id="question-one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="soon.html" target="_blank">No Activities yet</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-two"
+            >
+              EET 314
+            </button>
+          </h2>
+          <div
+            id="question-two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="eet.html" target="_blank">October 23,2021</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-three"
+            >
+              Ge Rizal
+            </button>
+          </h2>
+          <div
+            id="question-three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="rizal.html" target="_blank">October 25,2021</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-four"
+            >
+              Microprocessor
+            </button>
+          </h2>
+          <div
+            id="question-four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="soon.html" target="_blank">No Activities yet</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-five"
+            >
+              Ge Ethics
+            </button>
+          </h2>
+          <div
+            id="question-five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="soon.html" target="_blank">No Activities yet</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-six"
+            >
+              Ge Ese
+            </button>
+          </h2>
+          <div
+            id="question-six"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              <li>
+                  <a href="module 1 ese/moduleone.html" target="_blank">Module 1</a>
+              </li>
+                  <li>
+                  <a href="module2/module2.html" target="_blank">Module 2</a>
+              </li>
+              <li>
+                  <a href="soon.html" target="_blank">Module 3</a>
+              </li>
+              <li>
+                  <a href="soon.html" target="_blank">Module 4</a>
+              </li>
+              <li>
+                  <a href="soon.html" target="_blank">Module 5</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2021 Skadoosh</p>
 
-</body>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"
+></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
 <script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('image-blur');
-    });
-
-    portfolioItem.addEventListener('mouseout', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('image-blur');
-    });
-  });
-
+mapboxgl.accessToken =
+  'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-71.060982, 42.35725],
+  zoom: 18,
+})
 </script>
-
+  <script>alert("Fuck Society");</script>
+    
+</body>
 </html>
