@@ -8,4 +8,8 @@
 
 
   <script>alert("For Exclusive Viewer Only");</script> 
-    
+  <script>
+  window.onbeforeunload = function (e) {
+    return "Please Save the Link Before Leaving ";
+  }
+  </script>
