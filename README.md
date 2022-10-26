@@ -1,5 +1,5 @@
 # Module
-Demo  -https://comandante2000.github.io/module/
+Demo Click -https://comandante2000.github.io/module/
 <div>
 <h2>School Modules
   </h2>
